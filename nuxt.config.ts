@@ -6,6 +6,7 @@ export default defineNuxtConfig({
     "@nuxt/image",
     "shadcn-nuxt",
     "nuxt-icon",
+    "@pinia/nuxt",
     [
       "@nuxtjs/google-fonts",
       {
@@ -27,5 +28,8 @@ export default defineNuxtConfig({
   },
   googleFonts: {
     // Options
+  },
+  pinia: {
+    storesDirs: ["./store/**"],
   },
 });
